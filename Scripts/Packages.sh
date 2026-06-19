@@ -76,7 +76,11 @@ UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-ap
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 UPDATE_PACKAGE "easymesh" "torguardvpn/luci-app-easymesh" "main"
 UPDATE_PACKAGE "zerotier" "rufengsuixing/luci-app-zerotier" "main"
-# UPDATE_PACKAGE "ttyd" "ozon/luci-app-ttyd" "master"
+UPDATE_PACKAGE "ttyd" "ozon/luci-app-ttyd" "master"
+
+# AdGuardHome 软件源配置（原有保留）
+UPDATE_PACKAGE "adguardhome" "kidd96/openwrt-packages" "main" "pkg" "luci-app-adguardhome"
+
 
 #更新软件包版本
 UPDATE_VERSION() {
@@ -122,3 +126,4 @@ UPDATE_VERSION() {
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 UPDATE_VERSION "sing-box"
 #UPDATE_VERSION "tailscale"
+UPDATE_VERSION "adguardhome"
